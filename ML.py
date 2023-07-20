@@ -92,6 +92,9 @@ def convert_to_numpy(x_train, y_train, x_test, y_test):
     y_test = np.array(y_test)
     return x_train, y_train, x_test, y_test
 
+
+#step 2: Model Creation
+#this part just creates the model and specifies how big the layers are and how they are connected.
 def create_model(input_size):
     model = tf.keras.Sequential([
         # Input layer with the given input size
